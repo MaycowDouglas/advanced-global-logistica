@@ -93,7 +93,7 @@ export default function Home() {
               <Image src={ImageContainer} className="rounded-2xl" alt="" priority />
             </div>
             <div className="text-center md:text-left">
-              <h2 className="mb-5 font-bold text-blue-300 text-3xl lg:text-5xl">
+              <h2 className="mb-5 font-bold text-blue-300 text-3xl lg:text-5xl uppercase">
                 <Trans>Quem Somos</Trans>
               </h2>
               <p className="text-sm lg:text-base">
