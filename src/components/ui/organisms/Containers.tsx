@@ -9,12 +9,20 @@ import ImageContainerReefer from '@/public/images/containers/reefer.jpg'
 import ImageContainerStandard from '@/public/images/containers/standard.jpg'
 
 type Props = {
+  setOverlay: Dispatch<SetStateAction<boolean>>
   setContainer: Dispatch<
     SetStateAction<'Flatrack' | 'OpenTop' | 'Plataform' | 'Reefer' | 'Standard' | null>
   >
 }
 
-export default function Containers({ setContainer }: Props) {
+export default function Containers({ setOverlay, setContainer }: Props) {
+  function handleContainer(
+    container: 'Flatrack' | 'OpenTop' | 'Plataform' | 'Reefer' | 'Standard' | null
+  ) {
+    setOverlay(true)
+    setContainer(container)
+  }
+
   return (
     <Swiper
       spaceBetween={0}
@@ -25,35 +33,35 @@ export default function Containers({ setContainer }: Props) {
         <CardContainer
           name="Standard"
           image={{ src: ImageContainerStandard, alt: '' }}
-          onClick={() => setContainer('Standard')}
+          onClick={() => handleContainer('Standard')}
         />
       </SwiperSlide>
       <SwiperSlide className="max-w-[300px] flex justify-center">
         <CardContainer
           name="Flatrack"
           image={{ src: ImageContainerFlatrack, alt: '' }}
-          onClick={() => setContainer('Flatrack')}
+          onClick={() => handleContainer('Flatrack')}
         />
       </SwiperSlide>
       <SwiperSlide className="max-w-[300px] flex justify-center">
         <CardContainer
           name="Plataform"
           image={{ src: ImageContainerPlataform, alt: '' }}
-          onClick={() => setContainer('Plataform')}
+          onClick={() => handleContainer('Plataform')}
         />
       </SwiperSlide>
       <SwiperSlide className="max-w-[300px] flex justify-center">
         <CardContainer
           name="OpenTop"
           image={{ src: ImageContainerOpenTop, alt: '' }}
-          onClick={() => setContainer('OpenTop')}
+          onClick={() => handleContainer('OpenTop')}
         />
       </SwiperSlide>
       <SwiperSlide className="max-w-[300px] flex justify-center">
         <CardContainer
           name="Reefer"
           image={{ src: ImageContainerReefer, alt: '' }}
-          onClick={() => setContainer('Reefer')}
+          onClick={() => handleContainer('Reefer')}
         />
       </SwiperSlide>
     </Swiper>

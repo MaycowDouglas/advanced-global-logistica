@@ -35,9 +35,15 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 }
 
 export default function Home() {
+  const [overlay, setOverlay] = useState(false)
   const [container, setContainer] = useState<
     'Flatrack' | 'OpenTop' | 'Plataform' | 'Reefer' | 'Standard' | null
   >(null)
+
+  function handleContainer() {
+    setOverlay(false)
+    setContainer(null)
+  }
 
   return (
     <TemplateDefault title="" description="">
@@ -45,6 +51,13 @@ export default function Home() {
         <title>Advanced Global</title>
         <meta name="description" content="" />
       </Head>
+
+      {overlay && (
+        <div
+          onClick={handleContainer}
+          className="absolute z-40 top-0 left-0 right-0 bottom-0 bg-black-70"
+        ></div>
+      )}
 
       <div
         className={classNames(
@@ -54,7 +67,7 @@ export default function Home() {
       >
         <button
           className="absolute right-5 top-5 gap-2 flex items-center text-xl text-green-light-400"
-          onClick={() => setContainer(null)}
+          onClick={handleContainer}
         >
           <FaTimes />
           Fechar
@@ -63,19 +76,8 @@ export default function Home() {
         <ContainersDetails name={container} />
       </div>
 
-      <section className="relative">
-        <Image src={BgHero} alt="" fill className="object-cover object-bottom" priority />
-        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black-30"></div>
-        <Container>
-          <div className="h-screen py-10 flex md:justify-end md:items-center">
-            <h1 className="text-white text-3xl lg:text-4xl xl:text-5xl leading-10  xl:leading-[56px] font-bold uppercase">
-              <Trans>
-                Soluções <br /> em Logística <br />
-                <em className="not-italic text-green-light-300">Internacional</em>
-              </Trans>
-            </h1>
-          </div>
-        </Container>
+      <section>
+        <video src="/videos/coverr.mp4" muted autoPlay loop></video>
       </section>
       <section id={`sobre-nos`}>
         <Container>
@@ -131,7 +133,7 @@ export default function Home() {
               </p>
             </div>
 
-            <Containers setContainer={setContainer} />
+            <Containers setOverlay={setOverlay} setContainer={setContainer} />
           </Content>
         </Container>
       </section>
@@ -184,7 +186,7 @@ export default function Home() {
                     </Trans>
                   </p>
                   <a
-                    className="inline-flex items-center justify-center gap-2 px-6 py-2 bg-green-light-200 font-bold uppercase"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-2 bg-green-light-200 font-bold uppercase rounded shadow-lg"
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -213,85 +215,85 @@ export default function Home() {
           </Content>
         </Container>
       </section> */}
-      <section
-        id={t`contato`}
-        className="md:grid md:grid-cols-2 md:items-center lg:grid-cols-3 xl:pr-40"
-      >
-        <div className="relative h-96 md:h-[800px] lg:h-screen xl:h-screen">
-          <Image src={ImageGlobal} fill className="object-cover object-right" alt="" />
-        </div>
-        <div className="px-6 py-8 md:py-0 lg:px-14 lg:col-span-2">
-          <h2 className="text-blue-300 text-3xl lg:text-5xl font-bold uppercase">
-            Entre em contato
-          </h2>
-          <form className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
-            <div className="flex flex-col">
-              <label htmlFor="nome" className="text-blue-300 font-bold uppercase">
-                Seu Nome <span className="text-red-300">*</span>
-              </label>
-              <input
-                id="nome"
-                type="text"
-                name="nome"
-                placeholder="Digite seu nome"
-                className="border border-neutral-400 rounded mt-1 p-3"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="email" className="text-blue-300 font-bold uppercase">
-                Seu Email
-              </label>
-              <input
-                id="nome"
-                type="text"
-                name="nome"
-                placeholder="Digite seu nome"
-                className="border border-neutral-400 rounded mt-1 p-3"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="telefone" className="text-blue-300 font-bold uppercase">
-                Seu Telefone
-              </label>
-              <input
-                id="nome"
-                type="text"
-                name="nome"
-                placeholder="Digite seu nome"
-                className="border border-neutral-400 rounded mt-1 p-3"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="telefone" className="text-blue-300 font-bold uppercase">
-                Assunto
-              </label>
-              <input
-                id="nome"
-                type="text"
-                name="nome"
-                placeholder="Qual é o motivo do contato?"
-                className="border border-neutral-400 rounded mt-1 p-3"
-              />
-            </div>
-            <div className="flex flex-col lg:col-span-2">
-              <label htmlFor="mensagem" className="text-blue-300 font-bold uppercase">
-                Mensagem
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Digite sua mensagem"
-                className="border border-neutral-400 rounded mt-1 p-3"
-              />
-            </div>
-            <div className="hidden lg:block"></div>
-            <button className="inline-flex items-center justify-center gap-2 px-6 py-2 bg-green-light-200 font-bold uppercase">
-              <Trans>Enviar Mensagem</Trans>
-            </button>
-          </form>
-        </div>
+      <section id={t`contato`}>
+        <Container className="md:grid md:grid-cols-2 md:items-center lg:grid-cols-3">
+          <div className="relative h-96 md:h-[600px] rounded overflow-hidden">
+            <Image src={ImageGlobal} fill className="object-cover object-right" alt="" />
+          </div>
+          <div className="px-6 py-8 md:py-0 lg:px-14 lg:col-span-2">
+            <h2 className="text-blue-300 text-3xl lg:text-5xl font-bold uppercase">
+              <Trans>Entre em contato</Trans>
+            </h2>
+            <form className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+              <div className="flex flex-col">
+                <label htmlFor="nome" className="text-blue-300 font-bold uppercase">
+                  <Trans>
+                    Seu Nome <span className="text-red-300">*</span>
+                  </Trans>
+                </label>
+                <input
+                  id="nome"
+                  type="text"
+                  name="nome"
+                  placeholder={t`Digite seu nome`}
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="email" className="text-blue-300 font-bold uppercase">
+                  <Trans>Seu Email</Trans>
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder={t`Digite seu email`}
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="telefone" className="text-blue-300 font-bold uppercase">
+                  <Trans>Seu Telefone</Trans>
+                </label>
+                <input
+                  id="telefone"
+                  type="text"
+                  name="telefone"
+                  placeholder={t`Digite seu telefone`}
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="telefone" className="text-blue-300 font-bold uppercase">
+                  <Trans>Assunto</Trans>
+                </label>
+                <input
+                  id="assunto"
+                  type="text"
+                  name="assunto"
+                  placeholder={t`Qual é o motivo do contato?`}
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                />
+              </div>
+              <div className="flex flex-col lg:col-span-2">
+                <label htmlFor="mensagem" className="text-blue-300 font-bold uppercase">
+                  <Trans>Mensagem</Trans>
+                </label>
+                <textarea
+                  id="messagem"
+                  name="messagem"
+                  placeholder={t`Digite sua mensagem`}
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                />
+              </div>
+              <div className="hidden lg:block"></div>
+              <button className="inline-flex items-center justify-center gap-2 px-6 py-2 bg-green-light-200 font-bold uppercase rounded shadow-lg">
+                <Trans>Enviar Mensagem</Trans>
+              </button>
+            </form>
+          </div>
+        </Container>
       </section>
-      <section></section>
     </TemplateDefault>
   )
 }

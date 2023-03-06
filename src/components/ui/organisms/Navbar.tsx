@@ -12,13 +12,31 @@ import FlagBRA from '@/public/images/flags/bra.png'
 import FlagUSA from '@/public/images/flags/usa.png'
 import { classNames } from '@/utils'
 
+import { AdvancedGlobalIcon } from '../atoms/Icons'
+
 export default function Navbar() {
   const router = useRouter()
   const [isOpen, setOpen] = useState(false)
+  const [scrollPosition, setScrollPosition] = useState(0)
   const { locale: activeLocale, pathname, query, asPath } = router
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset
+      setScrollPosition(position)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  console.log(scrollPosition)
+
   return (
-    <nav>
+    <nav className={scrollPosition > 0 ? 'w-full fixed z-50 top-0 left-0 bg-white' : ''}>
       <div
         onClick={() => setOpen(false)}
         className={classNames(
@@ -28,7 +46,8 @@ export default function Navbar() {
       ></div>
       <Container className="z-20">
         <div className="flex items-center lg:items-center py-3 justify-between">
-          <Image src={BrandAdvancedGlobal} alt="" />
+          {/* <Image src={BrandAdvancedGlobal} alt="" /> */}
+          <AdvancedGlobalIcon />
           <button className="text-2xl lg:hidden" onClick={() => setOpen(!isOpen)}>
             {isOpen ? <FiX /> : <HiMenu />}
           </button>
@@ -44,11 +63,11 @@ export default function Navbar() {
                 <Trans>Nossos Serviços</Trans>
               </Link>
             </li>
-            <li className="px-4 uppercase">
+            {/* <li className="px-4 uppercase">
               <Link href={t`#blog`} className="hover:text-green-light-400">
                 <Trans>Blog</Trans>
               </Link>
-            </li>
+            </li> */}
             <li className="px-4 uppercase">
               <Link href={t`#contato`} className="hover:text-green-light-400">
                 <Trans>Contato</Trans>
@@ -91,11 +110,11 @@ export default function Navbar() {
                   <Trans>Nossos Serviços</Trans>
                 </Link>
               </li>
-              <li className="py-4 border-b-2 uppercase">
+              {/* <li className="py-4 border-b-2 uppercase">
                 <Link href="#blog" as={t`#blog`}>
                   <Trans>Blog</Trans>
                 </Link>
-              </li>
+              </li> */}
               <li className="py-4 border-b-2 uppercase">
                 <Link href="#contact" as={t`#contato`}>
                   <Trans>Contato</Trans>

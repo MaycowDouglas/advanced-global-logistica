@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
           <div className="mt-14">
             <p>
-              <Trans>© Advance Global 2022 Todos os direitos reservados | Design by</Trans>{' '}
+              <Trans>© Advance Global 2023 Todos os direitos reservados | Design by</Trans>{' '}
               <a
                 href="http://"
                 className="text-green-light-300"

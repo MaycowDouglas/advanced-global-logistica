@@ -13,23 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/ui/organisms/Navbar.tsx:48
-#: src/components/ui/organisms/Navbar.tsx:95
-msgid "#blog"
-msgstr "#blog"
-
-#: src/components/ui/organisms/Navbar.tsx:53
-#: src/components/ui/organisms/Navbar.tsx:100
+#: src/components/ui/organisms/Navbar.tsx:72
+#: src/components/ui/organisms/Navbar.tsx:119
 msgid "#contato"
 msgstr "#contact"
 
-#: src/components/ui/organisms/Navbar.tsx:43
-#: src/components/ui/organisms/Navbar.tsx:90
+#: src/components/ui/organisms/Navbar.tsx:62
+#: src/components/ui/organisms/Navbar.tsx:109
 msgid "#servicos"
 msgstr "#services"
 
-#: src/components/ui/organisms/Navbar.tsx:38
-#: src/components/ui/organisms/Navbar.tsx:85
+#: src/components/ui/organisms/Navbar.tsx:57
+#: src/components/ui/organisms/Navbar.tsx:104
 msgid "#sobre-nos"
 msgstr "#about-us"
 
@@ -71,24 +66,24 @@ msgstr "Height"
 msgid "Altura Inferior"
 msgstr "Height Bottom"
 
-#: src/pages/index.tsx:126
+#: src/pages/index.tsx:128
 msgid "As especificações fornecidas aqui servem apenas como exemplo, pois os contêineres variam de acordo com o fabricante. Se sua empresa tiver requisitos especiais relacionados a sua remessa, solicitamos que entre em contato conosco."
 msgstr "The below specifications are just as a reference of, once the containers can vary in accordance with the manufacturer. if your company has special requirements related to the cargo to be dispatched, please contact us"
+
+#: src/pages/index.tsx:268
+msgid "Assunto"
+msgstr "Subject"
 
 #: src/components/ui/organisms/Services.tsx:46
 #: src/components/ui/organisms/Services.tsx:108
 msgid "Atuamos na rota Brasil/países da América do Sul, no transporte de cargas fracionadas (LTL) ou transporte dedicado (FTL)."
 msgstr "We operate on the route Brazil - South America countries, transporting fractionated loads (LCL) or dedicated cargo (FTL)."
 
+#: src/components/ui/molecules/ServicesNavigation.tsx:23
 #: src/components/ui/organisms/Services.tsx:36
 #: src/components/ui/organisms/Services.tsx:92
 msgid "Aéreo Internacional"
 msgstr "International Airfreight Shipment"
-
-#: src/components/ui/organisms/Navbar.tsx:49
-#: src/components/ui/organisms/Navbar.tsx:96
-msgid "Blog"
-msgstr "Blog"
 
 #: src/components/templates/ModalContainer.tsx:576
 #: src/components/templates/ModalContainer.tsx:604
@@ -118,11 +113,11 @@ msgstr "Length"
 msgid "Comprimento Min"
 msgstr "Length Min."
 
-#: src/pages/index.tsx:123
+#: src/pages/index.tsx:125
 msgid "Conheça os tipos de contêiners"
 msgstr "Know the containers size."
 
-#: src/pages/index.tsx:111
+#: src/pages/index.tsx:113
 msgid "Conheças nossos principais serviços e veja como podemos ajudá-lo no transporte internacional de cargas e logistica."
 msgstr "Discover our main services and see how we can assist you on your logistic process and international transportation."
 
@@ -131,25 +126,46 @@ msgstr "Discover our main services and see how we can assist you on your logisti
 msgid "Consolidamos e embarcamos sua carga por via aérea, auxiliando-o nos trâmites burocráticos e trazendo maior tranquilidade para sua empresa."
 msgstr "We consolidate and ship your partial cargo by air, helping you on the bureaucratic procedures and bringing you more peace of mind. General cargo, medicines, perishable, dangerous goods and other."
 
+#: src/components/ui/molecules/ServicesNavigation.tsx:35
 #: src/components/ui/organisms/Services.tsx:50
 #: src/components/ui/organisms/Services.tsx:118
 msgid "Consultoria"
 msgstr "Foreign Trade Consultancy"
 
-#: src/components/ui/organisms/Navbar.tsx:54
-#: src/components/ui/organisms/Navbar.tsx:101
+#: src/components/ui/organisms/Navbar.tsx:73
+#: src/components/ui/organisms/Navbar.tsx:120
 msgid "Contato"
 msgstr "Contact"
+
+#: src/pages/index.tsx:250
+msgid "Digite seu email"
+msgstr "Type your e-mail"
+
+#: src/pages/index.tsx:238
+msgid "Digite seu nome"
+msgstr "Type your name"
+
+#: src/pages/index.tsx:262
+msgid "Digite seu telefone"
+msgstr "Type your phone"
+
+#: src/pages/index.tsx:285
+msgid "Digite sua mensagem"
+msgstr "Type your message"
 
 #: src/components/templates/ModalContainer.tsx:149
 msgid "Dimensões internas"
 msgstr "Inside Dimension"
 
-#: src/pages/index.tsx:289
+#: src/pages/index.tsx:225
+msgid "Entre em contato"
+msgstr "Contact Us"
+
+#: src/pages/index.tsx:291
 msgid "Enviar Mensagem"
 msgstr "Send"
 
-#: src/pages/index.tsx:143
+#: src/pages/index.tsx:145
 msgid "Fechamento de Câmbio"
 msgstr "EXCHANGE REMITTANCE"
 
@@ -157,7 +173,7 @@ msgstr "EXCHANGE REMITTANCE"
 msgid "Foco no negócio e na excelência na prestação dos serviços"
 msgstr "Focus on business and excellence in service delivery"
 
-#: src/pages/index.tsx:91
+#: src/pages/index.tsx:93
 msgid "Fundada em 2019, a Advance Global Logística está localizada em São Paulo, Capital e atua no agenciamento do transporte internacional aéreo, marítimo e rodoviário de cargas, nos principais portos e aeroportos do Brasil; e, apresentando soluções personalizadas e que melhor se adequam às necessidades do seu negócios."
 msgstr "Founded in 2019 and located in São Paulo, Capital, Advance Global Logística is a freight forwarder agent specialized on the international transportation by air, sea or road, with service on the main ports and airports of Brazil and presenting personalized solutions for your business."
 
@@ -207,6 +223,7 @@ msgstr "BEST COST X <1>BENEFIT</1>"
 msgid "MENOS BUROCRACIA, <0/> <1>MAIS SATISFAÇÃO</1>"
 msgstr "LESS BUREAUCRACY, <0/> <1>MORE SATISFACTION</1>"
 
+#: src/components/ui/molecules/ServicesNavigation.tsx:17
 #: src/components/ui/organisms/Services.tsx:29
 #: src/components/ui/organisms/Services.tsx:79
 msgid "Marítimo Internacional"
@@ -230,6 +247,10 @@ msgstr "Measure"
 msgid "Medidas"
 msgstr "Measures"
 
+#: src/pages/index.tsx:280
+msgid "Mensagem"
+msgstr "Message"
+
 #: src/components/templates/ModalContainer.tsx:158
 #: src/components/templates/ModalContainer.tsx:331
 #: src/components/templates/ModalContainer.tsx:400
@@ -243,9 +264,9 @@ msgstr "Millimeters"
 msgid "Nosso time é composto por profissionais capacitados e renomados, aptos a auxiliá-lo na tomada de decisão."
 msgstr "Our team is formed by high qualified professionals, in constantly updating, to present you solutions that simplify your processes and help on your decisions."
 
-#: src/components/ui/organisms/Navbar.tsx:44
-#: src/components/ui/organisms/Navbar.tsx:91
-#: src/pages/index.tsx:108
+#: src/components/ui/organisms/Navbar.tsx:63
+#: src/components/ui/organisms/Navbar.tsx:110
+#: src/pages/index.tsx:110
 msgid "Nossos Serviços"
 msgstr "OUR SERVICES"
 
@@ -257,7 +278,7 @@ msgstr "The world is each day more digital and Advance Global Logistica is aware
 msgid "Oferecemos, com excelência, serviços logísticos no âmbito internacional, door-to-door, com valor justo e vantajoso. Possuímos sistema automatizado, com atualização e envio diário do status do seu processo."
 msgstr "We offer with excellence, fair and advantageous logistic on door-to-door service. Our automated system will keep you daily updated about the status of your orders."
 
-#: src/pages/index.tsx:146
+#: src/pages/index.tsx:148
 msgid "Para facilitar e viabilizar acordos comerciais de forma prática e ágil, atuamos em parceria com a Exchange corretora de câmbios, cujo time operacional encontra-se disponível para ajudá-lo nas operações de compra e venda de moedas estrangeiras com maior previsibilidade."
 msgstr "To expedite commercial agreements in a practical way, we work in partnership with \"Exchange Corretora de Valores\", whose operational team is available to help you on the purchase and sale of foreign currencies with more predictability."
 
@@ -265,7 +286,7 @@ msgstr "To expedite commercial agreements in a practical way, we work in partner
 msgid "Peso"
 msgstr "Weight"
 
-#: src/pages/index.tsx:154
+#: src/pages/index.tsx:156
 msgid "Principais moedas:"
 msgstr "Main Currencies:"
 
@@ -281,7 +302,11 @@ msgstr "We offer you efficient and personalized logistic solution for your cargo
 msgid "Pés"
 msgstr "Feet"
 
-#: src/pages/index.tsx:88
+#: src/pages/index.tsx:274
+msgid "Qual é o motivo do contato?"
+msgstr "Enter the subject of the contact"
+
+#: src/pages/index.tsx:90
 msgid "Quem Somos"
 msgstr "WHO WE ARE"
 
@@ -290,6 +315,7 @@ msgstr "WHO WE ARE"
 msgid "Quilogramas"
 msgstr "Kilograms"
 
+#: src/components/ui/molecules/ServicesNavigation.tsx:29
 #: src/components/ui/organisms/Services.tsx:43
 #: src/components/ui/organisms/Services.tsx:105
 msgid "Rodoviário Internacional"
@@ -299,17 +325,14 @@ msgstr "International Road"
 msgid "Rua Conceição de Monte Alegre, 107 Torre B 10º Andar Cj.101 - São Paulo/SP CEP 04563-060 - BRASIL"
 msgstr "Rua Conceição de Monte Alegre, 107 Torre B 10º Andar Cj.101 - São Paulo/SP CEP 04563-060 - BRASIL"
 
-#: src/pages/index.tsx:192
+#: src/pages/index.tsx:194
 msgid "Saiba Mais <0/>"
 msgstr "Click here <0/>"
 
 #: src/components/ui/organisms/Services.tsx:53
-msgid "Se sua empresa necessita de consultoria e assessoria nos assuntos relacionados ao comércio internacional na importação e/ou  exportação, a Advance Global está à disposição para atendê-lo, inclusive no desembaraço aduaneiro, fechamento de câmbio e seguro internacional de cargas."
-msgstr "Whether your company needs consultancy and advice on import or export process, we can assist you. We also provide customs clearance service, money exchange remittance support and international insurance service."
-
 #: src/components/ui/organisms/Services.tsx:121
 msgid "Se sua empresa necessita de consultoria e assessoria nos assuntos relacionados ao comércio internacional na importação e/ou exportação, a Advance Global está à disposição para atendê-lo, inclusive no desembaraço aduaneiro, fechamento de câmbio e seguro internacional de cargas."
-msgstr ""
+msgstr "Whether your company needs consultancy and advice on import or export process, we can assist you. We also provide customs clearance service, money exchange remittance support and international insurance service."
 
 #: src/components/templates/ModalContainer.tsx:113
 msgid "Selecione um tamanho:"
@@ -319,14 +342,22 @@ msgstr "Select a size:"
 msgid "Sem barras de tejadilho"
 msgstr "No roof bars"
 
-#: src/components/ui/organisms/Navbar.tsx:39
-#: src/components/ui/organisms/Navbar.tsx:86
+#: src/pages/index.tsx:244
+msgid "Seu Email"
+msgstr "E-mail"
+
+#: src/pages/index.tsx:230
+msgid "Seu Nome <0>*</0>"
+msgstr "Your Name"
+
+#: src/pages/index.tsx:256
+msgid "Seu Telefone"
+msgstr "Phone"
+
+#: src/components/ui/organisms/Navbar.tsx:58
+#: src/components/ui/organisms/Navbar.tsx:105
 msgid "Sobre Nós"
 msgstr "About Us"
-
-#: src/pages/index.tsx:72
-msgid "Soluções <0/> em Logística <1/><2>Internacional</2>"
-msgstr "<2>INTERNATIONAL</2> <0/> LOGISTICS <1/>SOLUTIONS"
 
 #: src/components/ui/organisms/Benefits.tsx:21
 msgid "TRANSPORTE INTERNACIONAL <0/> <1>ÁGIL E SEGURO</1>"
@@ -338,7 +369,7 @@ msgstr "INTERNATIONAL TRANSPORT <0/> <1>AGILE AND SAFE</1>"
 msgid "Tara (Peso)"
 msgstr "Tare (Weight)"
 
-#: src/pages/index.tsx:181
+#: src/pages/index.tsx:183
 msgid "Todas as nossas soluções são pensadas para atender seus compromissos e os de sua empresa em moeda estrangeira."
 msgstr "All of our solutions are designed to meet your commitments and those of your company in foreign currency."
 
@@ -355,10 +386,10 @@ msgstr "ADVANTAGES"
 msgid "adm@advanceglobal.com.br"
 msgstr "adm@advanceglobal.com.br"
 
-#: src/pages/index.tsx:217
+#: src/pages/index.tsx:218
 msgid "contato"
 msgstr "contact"
 
 #: src/components/ui/organisms/Footer.tsx:63
-msgid "© Advance Global 2022 Todos os direitos reservados | Design by"
-msgstr "© Advance Global 2022 All rights reserved | Design by"
+msgid "© Advance Global 2023 Todos os direitos reservados | Design by"
+msgstr "© Advance Global 2023 All rights reserved | Design by"

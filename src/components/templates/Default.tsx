@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { ReactNode } from 'react'
 
 import ButtonWhatsapp from '@/components/ui/atoms/ButtonWhatsapp'
@@ -12,6 +13,8 @@ type Props = {
 }
 
 export default function TemplateDefault({ title, description, children }: Props) {
+  const { locale } = useRouter()
+
   return (
     <>
       <Head>
@@ -21,7 +24,7 @@ export default function TemplateDefault({ title, description, children }: Props)
       <div className="relative">
         <Navbar />
         {children}
-        <ButtonWhatsapp phone="" message="" />
+        {locale === 'pt' && <ButtonWhatsapp phone="" message="" />}
         <Footer />
       </div>
     </>

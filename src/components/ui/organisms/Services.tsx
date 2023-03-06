@@ -50,7 +50,7 @@ export const servicesData: Sevice[] = [
     name: t`Consultoria`,
     icon: 'consultancy',
     image: ImageServiceConsultancy,
-    description: t`Se sua empresa necessita de consultoria e assessoria nos assuntos relacionados ao comércio internacional na importação e/ou  exportação, a Advance Global está à disposição para atendê-lo, inclusive no desembaraço aduaneiro, fechamento de câmbio e seguro internacional de cargas.`,
+    description: t`Se sua empresa necessita de consultoria e assessoria nos assuntos relacionados ao comércio internacional na importação e/ou exportação, a Advance Global está à disposição para atendê-lo, inclusive no desembaraço aduaneiro, fechamento de câmbio e seguro internacional de cargas.`,
   },
 ]
 
