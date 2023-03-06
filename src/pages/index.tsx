@@ -77,7 +77,14 @@ export default function Home() {
       </div>
 
       <section>
-        <video src="/videos/coverr.mp4" muted autoPlay loop></video>
+        <video
+          className="hidden lg:block"
+          src="/videos/cover_desktop.mp4"
+          muted
+          autoPlay
+          loop
+        ></video>
+        <video className="lg:hidden" src="/videos/cover_mobile.mp4" muted autoPlay loop></video>
       </section>
       <section id={`sobre-nos`}>
         <Container>
