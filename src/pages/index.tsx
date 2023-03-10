@@ -13,7 +13,6 @@ import Benefits from '@/components/ui/organisms/Benefits'
 import Containers from '@/components/ui/organisms/Containers'
 import ContainersDetails from '@/components/ui/organisms/ContainersDetails'
 import Services from '@/components/ui/organisms/Services'
-import BgHero from '@/public/images/backgrounds/bg-home-hero.jpg'
 import BrandExchange from '@/public/images/brands/exchange.png'
 import ImageContainer from '@/public/images/container.jpg'
 import ImageCoupleTalking from '@/public/images/couple-talking.jpg'
@@ -76,7 +75,7 @@ export default function Home() {
         <ContainersDetails name={container} />
       </div>
 
-      <section>
+      <section className="relative">
         <video
           className="hidden lg:block"
           src="/videos/cover_desktop.mp4"
@@ -85,6 +84,14 @@ export default function Home() {
           loop
         ></video>
         <video className="lg:hidden" src="/videos/cover_mobile.mp4" muted autoPlay loop></video>
+        <div className="absolute top-0 left-0 bottom-0 right-0 z-10 p-4 md:p-8 lg:p-16 lg:flex lg:justify-end lg:items-center xl:p-44">
+          <h1 className="text-3xl md:text-5xl text-white font-bold uppercase">
+            <Trans>
+              Soluções <br /> em logística <br />
+              <em className="text-green-light-300 not-italic">internacional</em>
+            </Trans>
+          </h1>
+        </div>
       </section>
       <section id={`sobre-nos`}>
         <Container>
@@ -213,15 +220,6 @@ export default function Home() {
           <Benefits />
         </Container>
       </section>
-      {/* <section className="bg-blue-300 py-10 lg:py-20">
-        <Container>
-          <Content>
-            <h2 className="mb-4 text-green-light-300 text-3xl lg:text-5xl font-bold uppercase">
-              Blog
-            </h2>
-          </Content>
-        </Container>
-      </section> */}
       <section id={t`contato`}>
         <Container className="md:grid md:grid-cols-2 md:items-center lg:grid-cols-3">
           <div className="relative h-96 md:h-[600px] rounded overflow-hidden">

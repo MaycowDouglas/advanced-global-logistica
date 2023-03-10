@@ -1,3 +1,4 @@
+import { t, Trans } from '@lingui/macro'
 import Image, { StaticImageData } from 'next/image'
 import { MouseEventHandler } from 'react'
 import { FaChevronRight } from 'react-icons/fa'
@@ -20,9 +21,11 @@ export default function CardContainer({ image, name, onClick }: Props) {
       <Image src={image.src} alt={image.alt} />
       <div className="text-blue-300">
         <h3 className="mb-2 font-bold text-xl uppercase">{name}</h3>
-        <p className="text-lg leading-6">Veja as medidas deste contêiner.</p>
+        <p className="text-lg leading-6">
+          <Trans>Veja as medidas deste contêiner.</Trans>
+        </p>
       </div>
-      <Button text="Ver medidas" icon={<FaChevronRight />} onClick={onClick} />
+      <Button text={t`Ver medidas`} icon={<FaChevronRight />} onClick={onClick} />
     </Card>
   )
 }

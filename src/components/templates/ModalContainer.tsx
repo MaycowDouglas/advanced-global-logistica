@@ -112,7 +112,7 @@ export default function ModalContainer({
         <h4 className="mb-4 font-bold text-blue-300 text-2xl">
           <Trans>Selecione um tamanho:</Trans>
         </h4>
-        <Swiper className="mt-3">
+        <Swiper width={250} className="mt-3">
           {buttons.map((button, index) => (
             <SwiperSlide key={index} className={button.className}>
               <ContainerModalButton isActive={button.isActive} onClick={button.onClick}>
