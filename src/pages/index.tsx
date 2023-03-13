@@ -193,7 +193,7 @@ export default function Home() {
                   </p>
                   <a
                     className="inline-flex items-center justify-center gap-2 px-6 py-2 bg-green-light-200 font-bold uppercase rounded shadow-lg"
-                    href="http://"
+                    href="https://exchangenow.net/u/advanceglobal"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -213,11 +213,11 @@ export default function Home() {
         </Container>
       </section>
       <section id={t`contato`}>
-        <Container className="md:grid md:grid-cols-2 md:items-center lg:grid-cols-3 py-20">
-          <div className="relative h-96 md:h-full rounded-lg overflow-hidden">
-            <Image src={ImageGlobal} fill className="object-cover object-right" alt="" />
+        <Container className="md:grid md:grid-cols-2 md:items-center lg:grid-cols-5 lg:gap-20 py-20">
+          <div className="relative h-96 md:h-full lg:col-span-2 rounded-lg overflow-hidden">
+            <Image src={ImageGlobal} fill className="object-cover object-center" alt="" />
           </div>
-          <div className="px-6 py-8 md:py-0 lg:px-14 lg:col-span-2">
+          <div className="px-6 py-8 md:py-0 lg:px-14 lg:col-span-3">
             <h2 className="text-blue-300 text-3xl lg:text-5xl mb-10 font-bold uppercase">
               <Trans>Entre em contato</Trans>
             </h2>
