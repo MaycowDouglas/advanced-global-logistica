@@ -13,14 +13,16 @@ export default function ButtonWhatsapp({ phone, message }: Props) {
       <div className="px-4 py-3 hidden group-hover:block rounded-full rounded-tr bg-green-light-200 text-blue-400 transition-all">
         <p>Entre em contato por whatsapp</p>
       </div>
-      <Link
+      <a
+        target="_blank"
         href={`https://api.whatsapp.com/send?phone=${formatedPhone}${
           message !== undefined ? `&text=${message}` : ''
         }`}
         className="inline-flex items-center justify-center p-3 rounded-full bg-green-light-400"
+        rel="noreferrer"
       >
         <BsWhatsapp size={32} className="text-white" />
-      </Link>
+      </a>
     </div>
   )
 }

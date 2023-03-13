@@ -33,8 +33,6 @@ export default function Navbar() {
     }
   }, [])
 
-  console.log(scrollPosition)
-
   return (
     <nav className={scrollPosition > 0 ? 'w-full fixed z-50 top-0 left-0 bg-white' : ''}>
       <div

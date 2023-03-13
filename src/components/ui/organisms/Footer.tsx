@@ -62,7 +62,7 @@ export default function Footer() {
             <p>
               <Trans>© Advance Global 2023 Todos os direitos reservados | Design by</Trans>{' '}
               <a
-                href="http://"
+                href="https://weper.cc"
                 className="text-green-light-300"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -1,4 +1,6 @@
 import '@/styles/globals.css'
+import { i18n } from '@lingui/core'
+import { I18nProvider } from '@lingui/react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import nProgress from 'nprogress'
@@ -7,8 +9,6 @@ import { SWRConfig } from 'swr'
 
 import fetchJson from '@/utils/fetchJson'
 import { initTranslation } from '@/utils/lingui'
-import { i18n } from '@lingui/core'
-import { I18nProvider } from '@lingui/react'
 
 //initialization function
 initTranslation(i18n)

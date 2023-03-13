@@ -24,7 +24,7 @@ export default function TemplateDefault({ title, description, children }: Props)
       <div className="relative">
         <Navbar />
         {children}
-        {locale === 'pt' && <ButtonWhatsapp phone="" message="" />}
+        {locale === 'pt' && <ButtonWhatsapp phone="+551159903261" />}
         <Footer />
       </div>
     </>

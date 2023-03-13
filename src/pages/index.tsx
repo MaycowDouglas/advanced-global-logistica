@@ -77,21 +77,13 @@ export default function Home() {
 
       <section className="relative">
         <video
-          className="hidden lg:block"
+          className="hidden lg:block mx-auto"
           src="/videos/cover_desktop.mp4"
           muted
           autoPlay
           loop
         ></video>
         <video className="lg:hidden" src="/videos/cover_mobile.mp4" muted autoPlay loop></video>
-        <div className="absolute top-0 left-0 bottom-0 right-0 z-10 p-4 md:p-8 lg:p-16 lg:flex lg:justify-end lg:items-center xl:p-44">
-          <h1 className="text-3xl md:text-5xl text-white font-bold uppercase">
-            <Trans>
-              Soluções <br /> em logística <br />
-              <em className="text-green-light-300 not-italic">internacional</em>
-            </Trans>
-          </h1>
-        </div>
       </section>
       <section id={`sobre-nos`}>
         <Container>
@@ -221,12 +213,12 @@ export default function Home() {
         </Container>
       </section>
       <section id={t`contato`}>
-        <Container className="md:grid md:grid-cols-2 md:items-center lg:grid-cols-3">
-          <div className="relative h-96 md:h-[600px] rounded overflow-hidden">
+        <Container className="md:grid md:grid-cols-2 md:items-center lg:grid-cols-3 py-20">
+          <div className="relative h-96 md:h-full rounded-lg overflow-hidden">
             <Image src={ImageGlobal} fill className="object-cover object-right" alt="" />
           </div>
           <div className="px-6 py-8 md:py-0 lg:px-14 lg:col-span-2">
-            <h2 className="text-blue-300 text-3xl lg:text-5xl font-bold uppercase">
+            <h2 className="text-blue-300 text-3xl lg:text-5xl mb-10 font-bold uppercase">
               <Trans>Entre em contato</Trans>
             </h2>
             <form className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
@@ -241,7 +233,7 @@ export default function Home() {
                   type="text"
                   name="nome"
                   placeholder={t`Digite seu nome`}
-                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-green-light-400"
                 />
               </div>
               <div className="flex flex-col">
@@ -253,7 +245,7 @@ export default function Home() {
                   type="email"
                   name="email"
                   placeholder={t`Digite seu email`}
-                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-green-light-400"
                 />
               </div>
               <div className="flex flex-col">
@@ -265,7 +257,7 @@ export default function Home() {
                   type="text"
                   name="telefone"
                   placeholder={t`Digite seu telefone`}
-                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-green-light-400"
                 />
               </div>
               <div className="flex flex-col">
@@ -277,7 +269,7 @@ export default function Home() {
                   type="text"
                   name="assunto"
                   placeholder={t`Qual é o motivo do contato?`}
-                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-green-light-400"
                 />
               </div>
               <div className="flex flex-col lg:col-span-2">
@@ -288,7 +280,7 @@ export default function Home() {
                   id="messagem"
                   name="messagem"
                   placeholder={t`Digite sua mensagem`}
-                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-2 focus:border-green-light-400"
+                  className="outline-none border border-neutral-400 rounded mt-1 p-3 focus:border-green-light-400"
                 />
               </div>
               <div className="hidden lg:block"></div>
