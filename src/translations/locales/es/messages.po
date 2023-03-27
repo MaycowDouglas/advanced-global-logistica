@@ -45,7 +45,7 @@ msgid "Abertura de porta"
 msgstr ""
 
 #: src/components/templates/ModalContainer.tsx:476
-msgid "Abertura do Telhado"
+msgid "Abertura do Teto"
 msgstr ""
 
 #: src/components/templates/ModalContainer.tsx:204
@@ -110,7 +110,7 @@ msgstr ""
 #: src/components/templates/ModalContainer.tsx:172
 #: src/components/templates/ModalContainer.tsx:238
 #: src/components/templates/ModalContainer.tsx:298
-msgid "Comprimento Min"
+msgid "Comprimento Min."
 msgstr ""
 
 #: src/pages/index.tsx:131
@@ -339,7 +339,7 @@ msgid "Selecione um tamanho:"
 msgstr ""
 
 #: src/components/templates/ModalContainer.tsx:378
-msgid "Sem barras de tejadilho"
+msgid "Sem barras no teto"
 msgstr ""
 
 #: src/pages/index.tsx:241

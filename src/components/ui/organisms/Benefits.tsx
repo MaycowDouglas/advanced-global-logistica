@@ -2,7 +2,7 @@ import 'swiper/css'
 
 import { t, Trans } from '@lingui/macro'
 import Image from 'next/image'
-import { useState } from 'react'
+import { MouseEvent, useCallback, useState } from 'react'
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Swiper as SwiperClass } from 'swiper/types'
@@ -93,6 +93,17 @@ const benefits = [
 
 export default function Benefits() {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null)
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  const next = useCallback((swiper: SwiperClass) => {
+    swiper.slideNext()
+    setActiveIndex(swiper.activeIndex)
+  }, [])
+
+  const prev = useCallback((swiper: SwiperClass) => {
+    swiper.slidePrev()
+    setActiveIndex(swiper.activeIndex)
+  }, [])
 
   return (
     <Swiper spaceBetween={50} slidesPerView={1} onSwiper={(swiper) => setSwiper(swiper)}>
@@ -121,14 +132,24 @@ export default function Benefits() {
               {swiper && (
                 <>
                   <button
-                    onClick={() => swiper.slidePrev()}
-                    className="absolute z-20 right-20 md:left-5 md:right-auto bottom-5 md:top-1/2 md:bottom-auto md:-translate-y-1/2 p-3 xl:p-4 bg-green-light-400 text-white"
+                    onClick={() => prev(swiper)}
+                    className={classNames(
+                      activeIndex === 0
+                        ? 'bg-green-light-200 hover:cursor-not-allowed'
+                        : 'bg-green-light-400',
+                      'absolute z-20 right-20 md:left-5 md:right-auto bottom-5 md:top-1/2 md:bottom-auto md:-translate-y-1/2 p-3 xl:p-4 text-white'
+                    )}
                   >
                     <FaChevronLeft />
                   </button>
                   <button
-                    onClick={() => swiper.slideNext()}
-                    className="absolute z-20 right-5 bottom-5 md:top-1/2 md:-translate-y-1/2 md:bottom-auto p-3 xl:p-4 bg-green-light-400 text-white"
+                    onClick={() => next(swiper)}
+                    className={classNames(
+                      activeIndex === benefits.length - 1
+                        ? 'bg-green-light-200 hover:cursor-not-allowed'
+                        : 'bg-green-light-400',
+                      'absolute z-20 right-5 bottom-5 md:top-1/2 md:-translate-y-1/2 md:bottom-auto p-3 xl:p-4 text-white'
+                    )}
                   >
                     <FaChevronRight />
                   </button>

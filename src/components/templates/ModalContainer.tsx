@@ -169,7 +169,7 @@ export default function ModalContainer({
             {insideDimensions.props.millimeters?.minLength && (
               <div className="mb-3">
                 <p className="font-bold text-sm">
-                  <Trans>Comprimento Min</Trans>
+                  <Trans>Comprimento Min.</Trans>
                 </p>
                 <p>{insideDimensions.props.millimeters.minLength}</p>
               </div>
@@ -235,7 +235,7 @@ export default function ModalContainer({
             {insideDimensions.props.feet?.minLength && (
               <div className="mb-3">
                 <p className="font-bold text-sm">
-                  <Trans>Comprimento Min</Trans>
+                  <Trans>Comprimento Min.</Trans>
                 </p>
                 <p>{insideDimensions.props.feet.minLength}</p>
               </div>
@@ -295,7 +295,7 @@ export default function ModalContainer({
               )}
               {insideDimensions.props.millimeters?.minLength && (
                 <th>
-                  <Trans>Comprimento Min</Trans>
+                  <Trans>Comprimento Min.</Trans>
                 </th>
               )}
               {insideDimensions.props.millimeters?.width && (
@@ -375,7 +375,7 @@ export default function ModalContainer({
             {insideDimensions.props?.noRoofBars && (
               <tr className="odd:bg-neutral-200">
                 <th className="px-3 py-2">
-                  <Trans>Sem barras de tejadilho</Trans>
+                  <Trans>Sem barras no teto</Trans>
                 </th>
                 <td colSpan={3} className="px-3 py-2 text-right">
                   {insideDimensions.props.noRoofBars.height}mm
@@ -473,7 +473,7 @@ export default function ModalContainer({
       {openRoof && (
         <div className={openRoof.divClassName}>
           <h4 className="mb-4 font-bold text-blue-300 text-2xl">
-            <Trans>Abertura do Telhado</Trans>
+            <Trans>Abertura do Teto</Trans>
           </h4>
 
           <div className="grid grid-cols-2 gap-5 lg:hidden">
