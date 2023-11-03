@@ -1,8 +1,8 @@
-import { useState } from 'react'
-
+import { t, Trans } from '@lingui/macro'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { FiChevronRight } from 'react-icons/fi'
 
@@ -22,10 +22,6 @@ import FlagUSA from '@/public/images/flags/usa.png'
 import ImageGlobal from '@/public/images/global.jpg'
 import { classNames } from '@/utils'
 import { loadTranslation } from '@/utils/lingui'
-import {
-  t,
-  Trans,
-} from '@lingui/macro'
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const translation = await loadTranslation(ctx.locale!, process.env.NODE_ENV === 'production')
