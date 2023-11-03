@@ -1,8 +1,8 @@
-import { t, Trans } from '@lingui/macro'
+import { useState } from 'react'
+
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { FiChevronRight } from 'react-icons/fi'
 
@@ -22,6 +22,10 @@ import FlagUSA from '@/public/images/flags/usa.png'
 import ImageGlobal from '@/public/images/global.jpg'
 import { classNames } from '@/utils'
 import { loadTranslation } from '@/utils/lingui'
+import {
+  t,
+  Trans,
+} from '@lingui/macro'
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const translation = await loadTranslation(ctx.locale!, process.env.NODE_ENV === 'production')
@@ -85,7 +89,7 @@ export default function Home() {
         ></video>
         <video className="lg:hidden" src="/videos/cover_mobile.mp4" muted autoPlay loop></video>
       </section>
-      <section id={`sobre-nos`}>
+      <section id={t`sobre-nos`}>
         <Container>
           <Content className="py-20 grid grid-cols-1 md:grid-cols-2 md:items-center gap-10 lg:gap-20">
             <div className="order-first md:order-last">
@@ -108,7 +112,7 @@ export default function Home() {
         </Container>
       </section>
       <section></section>
-      <section id={`servicos`} className="bg-blue-300 text-white">
+      <section id={t`servicos`} className="bg-blue-300 text-white">
         <Container className="py-10">
           <Content>
             <div className="text-center md:w-2/3 md:mx-auto">

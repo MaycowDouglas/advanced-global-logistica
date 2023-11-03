@@ -66,11 +66,11 @@ msgstr "Altura"
 msgid "Altura Inferior"
 msgstr "Altura Inferior"
 
-#: src/pages/index.tsx:134
+#: src/pages/index.tsx:138
 msgid "As especificações fornecidas aqui servem apenas como exemplo, pois os contêineres variam de acordo com o fabricante. Se sua empresa tiver requisitos especiais relacionados a sua remessa, solicitamos que entre em contato conosco."
 msgstr "As especificações fornecidas aqui servem apenas como exemplo, pois os contêineres variam de acordo com o fabricante. Se sua empresa tiver requisitos especiais relacionados a sua remessa, solicitamos que entre em contato conosco."
 
-#: src/pages/index.tsx:265
+#: src/pages/index.tsx:269
 msgid "Assunto"
 msgstr "Assunto"
 
@@ -113,11 +113,11 @@ msgstr "Comprimento"
 msgid "Comprimento Min."
 msgstr "Comprimento Min."
 
-#: src/pages/index.tsx:131
+#: src/pages/index.tsx:135
 msgid "Conheça os tipos de contêiners"
 msgstr "Conheça os tipos de contêiners"
 
-#: src/pages/index.tsx:119
+#: src/pages/index.tsx:123
 msgid "Conheças nossos principais serviços e veja como podemos ajudá-lo no transporte internacional de cargas e logistica."
 msgstr "Conheças nossos principais serviços e veja como podemos ajudá-lo no transporte internacional de cargas e logistica."
 
@@ -137,19 +137,19 @@ msgstr "Consultoria"
 msgid "Contato"
 msgstr "Contato"
 
-#: src/pages/index.tsx:247
+#: src/pages/index.tsx:251
 msgid "Digite seu email"
 msgstr "Digite seu email"
 
-#: src/pages/index.tsx:235
+#: src/pages/index.tsx:239
 msgid "Digite seu nome"
 msgstr "Digite seu nome"
 
-#: src/pages/index.tsx:259
+#: src/pages/index.tsx:263
 msgid "Digite seu telefone"
 msgstr "Digite seu telefone"
 
-#: src/pages/index.tsx:282
+#: src/pages/index.tsx:286
 msgid "Digite sua mensagem"
 msgstr "Digite sua mensagem"
 
@@ -157,15 +157,15 @@ msgstr "Digite sua mensagem"
 msgid "Dimensões internas"
 msgstr "Dimensões internas"
 
-#: src/pages/index.tsx:222
+#: src/pages/index.tsx:226
 msgid "Entre em contato"
 msgstr "Entre em contato"
 
-#: src/pages/index.tsx:288
+#: src/pages/index.tsx:292
 msgid "Enviar Mensagem"
 msgstr "Enviar Mensagem"
 
-#: src/pages/index.tsx:151
+#: src/pages/index.tsx:155
 msgid "Fechamento de Câmbio"
 msgstr "Fechamento de Câmbio"
 
@@ -173,7 +173,7 @@ msgstr "Fechamento de Câmbio"
 msgid "Foco no negócio e na excelência na prestação dos serviços"
 msgstr "Foco no negócio e na excelência na prestação dos serviços"
 
-#: src/pages/index.tsx:99
+#: src/pages/index.tsx:103
 msgid "Fundada em 2019, a Advance Global Logística está localizada em São Paulo, Capital e atua no agenciamento do transporte internacional aéreo, marítimo e rodoviário de cargas, nos principais portos e aeroportos do Brasil; e, apresentando soluções personalizadas e que melhor se adequam às necessidades do seu negócios."
 msgstr "Fundada em 2019, a Advance Global Logística está localizada em São Paulo, Capital e atua no agenciamento do transporte internacional aéreo, marítimo e rodoviário de cargas, nos principais portos e aeroportos do Brasil; e, apresentando soluções personalizadas e que melhor se adequam às necessidades do seu negócios."
 
@@ -247,7 +247,7 @@ msgstr "Medida"
 msgid "Medidas"
 msgstr "Medidas"
 
-#: src/pages/index.tsx:277
+#: src/pages/index.tsx:281
 msgid "Mensagem"
 msgstr "Mensagem"
 
@@ -266,7 +266,7 @@ msgstr "Nosso time é composto por profissionais capacitados e renomados, aptos 
 
 #: src/components/ui/organisms/Navbar.tsx:61
 #: src/components/ui/organisms/Navbar.tsx:108
-#: src/pages/index.tsx:116
+#: src/pages/index.tsx:120
 msgid "Nossos Serviços"
 msgstr "Nossos Serviços"
 
@@ -278,7 +278,7 @@ msgstr "O mundo digital vem se tornando cada vez mais atual, e a Advance Global 
 msgid "Oferecemos, com excelência, serviços logísticos no âmbito internacional, door-to-door, com valor justo e vantajoso. Possuímos sistema automatizado, com atualização e envio diário do status do seu processo."
 msgstr "Oferecemos, com excelência, serviços logísticos no âmbito internacional, door-to-door, com valor justo e vantajoso. Possuímos sistema automatizado, com atualização e envio diário do status do seu processo."
 
-#: src/pages/index.tsx:154
+#: src/pages/index.tsx:158
 msgid "Para facilitar e viabilizar acordos comerciais de forma prática e ágil, atuamos em parceria com a Exchange corretora de câmbios, cujo time operacional encontra-se disponível para ajudá-lo nas operações de compra e venda de moedas estrangeiras com maior previsibilidade."
 msgstr "Para facilitar e viabilizar acordos comerciais de forma prática e ágil, atuamos em parceria com a Exchange corretora de câmbios, cujo time operacional encontra-se disponível para ajudá-lo nas operações de compra e venda de moedas estrangeiras com maior previsibilidade."
 
@@ -286,7 +286,7 @@ msgstr "Para facilitar e viabilizar acordos comerciais de forma prática e ágil
 msgid "Peso"
 msgstr "Peso"
 
-#: src/pages/index.tsx:162
+#: src/pages/index.tsx:166
 msgid "Principais moedas:"
 msgstr "Principais moedas:"
 
@@ -302,11 +302,11 @@ msgstr "Proporcionamos soluções em logística eficientes e personalizadas, par
 msgid "Pés"
 msgstr "Pés"
 
-#: src/pages/index.tsx:271
+#: src/pages/index.tsx:275
 msgid "Qual é o motivo do contato?"
 msgstr "Qual é o motivo do contato?"
 
-#: src/pages/index.tsx:96
+#: src/pages/index.tsx:100
 msgid "Quem Somos"
 msgstr "Quem Somos"
 
@@ -325,7 +325,7 @@ msgstr "Rodoviário Internacional"
 msgid "Rua Conceição de Monte Alegre, 107 Torre B 10º Andar Cj.101 - São Paulo/SP CEP 04563-060 - BRASIL"
 msgstr "Rua Conceição de Monte Alegre, 107 Torre B 10º Andar Cj.101 - São Paulo/SP CEP 04563-060 - BRASIL"
 
-#: src/pages/index.tsx:200
+#: src/pages/index.tsx:204
 msgid "Saiba Mais <0/>"
 msgstr "Saiba Mais <0/>"
 
@@ -342,15 +342,15 @@ msgstr "Selecione um tamanho:"
 msgid "Sem barras no teto"
 msgstr "Sem barras no teto"
 
-#: src/pages/index.tsx:241
+#: src/pages/index.tsx:245
 msgid "Seu Email"
 msgstr "Seu Email"
 
-#: src/pages/index.tsx:227
+#: src/pages/index.tsx:231
 msgid "Seu Nome <0>*</0>"
 msgstr "Seu Nome <0>*</0>"
 
-#: src/pages/index.tsx:253
+#: src/pages/index.tsx:257
 msgid "Seu Telefone"
 msgstr "Seu Telefone"
 
@@ -369,7 +369,7 @@ msgstr "TRANSPORTE INTERNACIONAL <0/> <1>ÁGIL E SEGURO</1>"
 msgid "Tara (Peso)"
 msgstr "Tara (Peso)"
 
-#: src/pages/index.tsx:189
+#: src/pages/index.tsx:193
 msgid "Todas as nossas soluções são pensadas para atender seus compromissos e os de sua empresa em moeda estrangeira."
 msgstr "Todas as nossas soluções são pensadas para atender seus compromissos e os de sua empresa em moeda estrangeira."
 
@@ -378,7 +378,7 @@ msgstr "Todas as nossas soluções são pensadas para atender seus compromissos 
 msgid "Transportamos sua carga nas diversas modalidades do marítimo, tais como FCL, LCL, breakbulk, cargas projeto (heavy lift), granel ou carga rolante/veículos (Ro-Ro)."
 msgstr "Transportamos sua carga nas diversas modalidades do marítimo, tais como FCL, LCL, breakbulk, cargas projeto (heavy lift), granel ou carga rolante/veículos (Ro-Ro)."
 
-#: src/components/ui/organisms/Benefits.tsx:113
+#: src/components/ui/organisms/Benefits.tsx:124
 msgid "VANTAGENS"
 msgstr "VANTAGENS"
 
@@ -394,9 +394,17 @@ msgstr "Ver medidas"
 msgid "adm@advanceglobal.com.br"
 msgstr "adm@advanceglobal.com.br"
 
-#: src/pages/index.tsx:215
+#: src/pages/index.tsx:219
 msgid "contato"
 msgstr "contato"
+
+#: src/pages/index.tsx:115
+msgid "servicos"
+msgstr "servicos"
+
+#: src/pages/index.tsx:92
+msgid "sobre-nos"
+msgstr "sobre-nos"
 
 #: src/components/ui/organisms/Footer.tsx:63
 msgid "© Advance Global 2023 Todos os direitos reservados | Design by"
